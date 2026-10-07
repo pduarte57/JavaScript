@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <p>Menu 1</p>
+      <p>Menu 2</p>
+      <p>Menu 3</p>
+    </nav>
+  </header>
+  <main>
+    <h2 id="titulo">Aula 3 - JavaScript DOM</h2>
+    <p class="comandos">getElementById</p>
+    <p class="comandos">getElementByTagName</p>
+    <p class="comandos">getElementByClassName</p>
+    <p>Comandos para pegar os elementos.</p>
+  </main>
+  <div>
+    <p id="ex1">1 - Alterar o texto do "Menu 1" para item 1.</p>
+    <p id="ex2">2 - Alterar o texto do "Menu 2" para "Item 2" através da Tag.</p>
+  </div>
+  <script>
+    //1
+    document.getElementsByTagName("p")[0].innerHTML = "Item 1";
+    document.getElementsByTagName("p")[1].innerHTML = "Item 2";
+  </script>
+</body>
+</html>
