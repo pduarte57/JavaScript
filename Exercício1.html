@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site</title>
+</head>
+<body>
+  <h1>Bem-vindo ao site!</h1>
+  <button>Ocultar</button>
+  <script>
+    const msg = document.getElementsByTagName("h1")[0];
+    const botão = document.querySelector("button");
+    botão.addEventListener("click", function(){
+      if(msg.style.display === 'none'){
+        msg.style.display = 'block';
+        botão.textContent = 'Ocultar';
+      }else{
+        msg.style.display = 'none';
+        botão.textContent = 'Mostrar';
+      }
+    })
+  </script>
+</body>
+</html>
