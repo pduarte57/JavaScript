@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-bt">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,10 +18,7 @@
     const telefone = document.getElementById("telefone");
     const lista  = document.getElementById("lista");
     const botao = document.getElementById("cadastrar");
-      let contato = {
-        nome: nome.value,
-        telefone: telefone.value
-      };
+      
     botao.addEventListener("click", cadastrarContato);
 
     function cadastrarContato(){
@@ -31,7 +28,7 @@
         alert("Preencha os campos!");
         return;
       }
-      contato = {
+      let contato = {
         nome: n,
         telefone: t
       };
@@ -44,13 +41,12 @@
     }
     function mostrarContatos(){
       lista.innerHTML = "";
-      contatos.forEach(function(){
+      contatos.forEach(function(contato){
       let item = document.createElement("li");
       item.textContent = contato.nome + " - " + contato.telefone;
       lista.appendChild(item);
       });
     }
-    
     
   </script>
 </body>
